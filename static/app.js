@@ -37,7 +37,8 @@ getRealTimeUpdates = function(map) {
 
             if (isNewMarker(new google.maps.LatLng(myData.lat, myData.long))) {
             	console.log(doc.id, " => ", myData);
-            	latlng = {lat: myData.lat, lng: myData.long};
+            	
+            latlng = {lat: myData.lat, lng: myData.long};
             	createMarker(latlng, map);
             }
 
@@ -82,6 +83,10 @@ function removeMarker(marker) {
 	})
 	marker.setMap(null);
 }
+
+
+
+
 
 
 
